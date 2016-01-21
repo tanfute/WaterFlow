@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9F251711C2245A400EE1B36 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F251701C2245A400EE1B36 /* CollectViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C9F2F67C1C1FD7C2003D35C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F67B1C1FD7C2003D35C3 /* main.m */; };
 		C9F2F67F1C1FD7C2003D35C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F67E1C1FD7C2003D35C3 /* AppDelegate.m */; };
 		C9F2F6821C1FD7C2003D35C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F6811C1FD7C2003D35C3 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		C9F2F68A1C1FD7C2003D35C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2F6881C1FD7C2003D35C3 /* LaunchScreen.storyboard */; };
 		C9F2F6951C1FD7C2003D35C3 /* WaterFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F6941C1FD7C2003D35C3 /* WaterFlowTests.m */; };
 		C9F2F6A01C1FD7C2003D35C3 /* WaterFlowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F69F1C1FD7C2003D35C3 /* WaterFlowUITests.m */; };
+		C9F2F6B01C1FDA2E003D35C3 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2F6AF1C1FDA2E003D35C3 /* UIImage+Extension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9F2516F1C2245A400EE1B36 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectViewController.h; path = ViewControllers/CollectViewController/CollectViewController.h; sourceTree = "<group>"; };
+		C9F251701C2245A400EE1B36 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectViewController.m; path = ViewControllers/CollectViewController/CollectViewController.m; sourceTree = "<group>"; };
 		C9F2F6771C1FD7C2003D35C3 /* WaterFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F2F67B1C1FD7C2003D35C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9F2F67D1C1FD7C2003D35C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		C9F2F69B1C1FD7C2003D35C3 /* WaterFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F2F69F1C1FD7C2003D35C3 /* WaterFlowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowUITests.m; sourceTree = "<group>"; };
 		C9F2F6A11C1FD7C2003D35C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F2F6AE1C1FDA2E003D35C3 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "category/UIImage+Extension.h"; sourceTree = "<group>"; };
+		C9F2F6AF1C1FDA2E003D35C3 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "category/UIImage+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9F2516E1C22456E00EE1B36 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F251721C2245AB00EE1B36 /* CollectViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9F251721C2245AB00EE1B36 /* CollectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2516F1C2245A400EE1B36 /* CollectViewController.h */,
+				C9F251701C2245A400EE1B36 /* CollectViewController.m */,
+			);
+			name = CollectViewController;
+			sourceTree = "<group>";
+		};
 		C9F2F66E1C1FD7C2003D35C3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +124,8 @@
 		C9F2F6791C1FD7C2003D35C3 /* WaterFlow */ = {
 			isa = PBXGroup;
 			children = (
+				C9F2516E1C22456E00EE1B36 /* ViewControllers */,
+				C9F2F6AD1C1FD9E9003D35C3 /* category */,
 				C9F2F67D1C1FD7C2003D35C3 /* AppDelegate.h */,
 				C9F2F67E1C1FD7C2003D35C3 /* AppDelegate.m */,
 				C9F2F6801C1FD7C2003D35C3 /* ViewController.h */,
@@ -138,6 +163,15 @@
 				C9F2F6A11C1FD7C2003D35C3 /* Info.plist */,
 			);
 			path = WaterFlowUITests;
+			sourceTree = "<group>";
+		};
+		C9F2F6AD1C1FD9E9003D35C3 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2F6AE1C1FDA2E003D35C3 /* UIImage+Extension.h */,
+				C9F2F6AF1C1FDA2E003D35C3 /* UIImage+Extension.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +306,9 @@
 			files = (
 				C9F2F6821C1FD7C2003D35C3 /* ViewController.m in Sources */,
 				C9F2F67F1C1FD7C2003D35C3 /* AppDelegate.m in Sources */,
+				C9F251711C2245A400EE1B36 /* CollectViewController.m in Sources */,
 				C9F2F67C1C1FD7C2003D35C3 /* main.m in Sources */,
+				C9F2F6B01C1FDA2E003D35C3 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +534,7 @@
 				C9F2F6A61C1FD7C2003D35C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F2F6A71C1FD7C2003D35C3 /* Build configuration list for PBXNativeTarget "WaterFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +543,7 @@
 				C9F2F6A91C1FD7C2003D35C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F2F6AA1C1FD7C2003D35C3 /* Build configuration list for PBXNativeTarget "WaterFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +552,7 @@
 				C9F2F6AC1C1FD7C2003D35C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
