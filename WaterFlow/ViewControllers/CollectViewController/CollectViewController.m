@@ -98,6 +98,9 @@ static NSString *key2 = @"footer";
     NSLog(@"item======%d",indexPath.item);
     NSLog(@"row=======%d",indexPath.row);
     NSLog(@"section===%d",indexPath.section);
+    
+    
+    
 }
 
 //返回这个UICollectionView是否可以被选择
